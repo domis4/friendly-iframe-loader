@@ -60,21 +60,16 @@ const App = () => {
     <>
       <div className="row">
         <h1>React-App</h1>
-        <div className="col-xs-12 col-sm-6">
-          <div
-            className="circle"
-            style={{
-              width: `${diameter}px`,
-              height: `${diameter}px`,
-              borderRadius: '50%',
-              backgroundColor: 'red',
-              transition: 'width 0.3s, height 0.3s'
-            }}
-          />
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </div>
+        <div
+          className="circle"
+          style={{
+            width: `${diameter}px`,
+            height: `${diameter}px`,
+            borderRadius: '50%',
+            backgroundColor: 'red',
+            transition: 'width 0.3s, height 0.3s'
+          }} />
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
       </div>
     </>
   )

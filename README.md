@@ -15,3 +15,7 @@ launch cdn on `localhost:8081` which triggers origin protection. The iframe can 
 ```
 yarn start-cnd
 ```
+
+open `localhost:8081` to see this example:
+
+![GIF of example](/example.gif)
