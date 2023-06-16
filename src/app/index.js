@@ -46,7 +46,7 @@ const App = () => {
   useEffect(() => {
     const observer = new ResizeObserver(entries => {
       const { height } = document.querySelector('#root').getBoundingClientRect()
-      window.parent.iframeUtils.resizeIframe(height + 16)
+      window.parent.iframeUtils.resizeIframe(height + 32)
     })
 
     observer.observe(document.querySelector('#root'))

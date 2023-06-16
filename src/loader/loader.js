@@ -10,12 +10,13 @@ import './set-iframe-height'
     iframe.src = 'javascript:void(0)'
     iframe.title = ''
     iframe.role = 'presentation'
-    iframe.style = 'border: none; width: 100%;'
+    iframe.style = 'width: 100%; frameBorder: none; border: none; '
     iframe.id = 'iframe-id'
 
     container.appendChild(iframe)
 
     const iframeDocument = iframe.contentWindow.document
+    window.iframeUtils.document = iframeDocument
 
     iframeDocument.open()
     iframeDocument.setup = async () => {
@@ -40,6 +41,7 @@ import './set-iframe-height'
 
     const html = iframeDocument.createElement('html')
     iframeDocument.appendChild(html)
+
     iframeDocument.close()
 
     iframeDocument.setup()
@@ -47,4 +49,13 @@ import './set-iframe-height'
   }
 
   window.iframeUtils.load()
+
+  // Safari Fix
+  window.iframeUtils.document.querySelectorAll('html').forEach((element, i) => {
+    if (i === 0) {
+      return
+    }
+
+    element.remove()
+  })
 })()
